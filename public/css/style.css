@@ -1,42 +1,56 @@
-/* Reset de la marge et du rembourrage pour le corps */
+/* Style général pour la mise en page */
 body {
-    margin: 100;
-    padding: 100;
-}   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 a {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007BFF;
-            text-align: center;
-            text-decoration: none;
-            border: 1px solid #007BFF;
-            border-radius: 25px;
-            width: 150px;
-            height: 50px;
-            line-height: 50px;
-            transition: background-color 0.3s, color 0.3s;
+    display: inline-flex; /* Utiliser inline-flex pour conserver le comportement inline */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    border-radius: 25px;
+    width: 140px; /* Taille fixe */
+    height: 60px; /* Taille fixe */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 a:hover {
     background-color: #0056b3;
     color: #ffffff;
-}
-
-.container {
-    max-width: 80%;
-    margin: 0 auto; /* Centrer la page horizontalement */
-    padding: 20px; /* Ajouter un peu d'espace autour du contenu */
-}
-
-/* Styles pour le contenu principal */
-.main-content {
-    /* Ajouter des styles selon les besoins */
-}
-
-/* Styles pour le pied de page */
-.footer {
-    /* Ajouter des styles selon les besoins */
 }
